@@ -1,9 +1,9 @@
 # Simple PHP cookie manager
 
-![Packagist Version](https://img.shields.io/packagist/v/dankkomcg/cookie-manager)
-![Total Downloads](https://img.shields.io/packagist/dt/dankkomcg/cookie-manager)
-![PHP Version](https://img.shields.io/packagist/php-v/dankkomcg/cookie-manager)
-![License](https://img.shields.io/github/license/tu-usuario/tu-repositorio)
+![Packagist Version](https://img.shields.io/packagist/v/dankkomcg/cookie)
+![Total Downloads](https://img.shields.io/packagist/dt/dankkomcg/cookie)
+![PHP Version](https://img.shields.io/packagist/php-v/dankkomcg/cookie)
+![License](https://img.shields.io/github/license/dankkomcg/cookie)
 
 Librería de PHP para gestionar cookies de manera simple y eficiente. Facilita la creación, eliminación y gestión de cookies.
 
