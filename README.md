@@ -3,7 +3,7 @@
 ![Packagist Version](https://img.shields.io/packagist/v/dankkomcg/cookie)
 ![Total Downloads](https://img.shields.io/packagist/dt/dankkomcg/cookie)
 ![PHP Version](https://img.shields.io/packagist/php-v/dankkomcg/cookie)
-![License](https://img.shields.io/github/license/dankkomcg/cookie)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Librería de PHP para gestionar cookies de manera simple y eficiente. Facilita la creación, eliminación y gestión de cookies.
 
