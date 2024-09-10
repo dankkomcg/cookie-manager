@@ -1,5 +1,5 @@
 {
-    "name": "dankkomcg/cookie",
+    "name": "dankkomcg/cookie-manager",
     "version": "1.0.0",
     "description": "Simple PHP cookie manager.",
     "type": "library",
