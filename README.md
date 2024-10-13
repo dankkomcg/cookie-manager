@@ -1,8 +1,8 @@
 # Simple PHP Cookie Manager
 
 ![Packagist Version](https://img.shields.io/packagist/v/dankkomcg/cookie-manager)
-![Build Status](https://img.shields.io/travis/dankkomcg/cookie-manager/main)
-![Coverage Status](https://img.shields.io/coveralls/github/dankkomcg/cookie-manager/main)
+![Build Status](https://img.shields.io/travis/dankkomcg/cookie-manager/master)
+![Coverage Status](https://img.shields.io/coveralls/github/dankkomcg/cookie-manager/master)
 ![License](https://img.shields.io/github/license/dankkomcg/cookie-manager)
 
 A simple and efficient PHP library for managing cookies. It simplifies the creation, deletion, and management of cookies.
@@ -90,4 +90,4 @@ If you wish to contribute to this project, you can fork the repository, create a
 ## License
 
 This project is licensed under the **MIT License**. See the `LICENSE` file for more details.
-```
+
