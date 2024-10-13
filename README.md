@@ -91,10 +91,3 @@ If you wish to contribute to this project, you can fork the repository, create a
 
 This project is licensed under the **MIT License**. See the `LICENSE` file for more details.
 ```
-
-**Notas sobre los badges:**
-
-- **Packagist Version**: Muestra la versión actual de la librería en Packagist.
-- **Build Status**: Indica el estado de la última compilación (requiere integración con Travis CI o similar).
-- **Coverage Status**: Muestra el porcentaje de cobertura de pruebas (requiere integración con Coveralls o similar).
-- **License**: Indica el tipo de licencia del proyecto.
