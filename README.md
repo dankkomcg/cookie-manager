@@ -1,92 +1,100 @@
-# Simple PHP cookie manager
+# Simple PHP Cookie Manager
 
-![Packagist Version](https://img.shields.io/packagist/v/dankkomcg/cookie)
-![Total Downloads](https://img.shields.io/packagist/dt/dankkomcg/cookie)
-![PHP Version](https://img.shields.io/packagist/php-v/dankkomcg/cookie)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Packagist Version](https://img.shields.io/packagist/v/dankkomcg/cookie-manager)
+![Build Status](https://img.shields.io/travis/dankkomcg/cookie-manager/main)
+![Coverage Status](https://img.shields.io/coveralls/github/dankkomcg/cookie-manager/main)
+![License](https://img.shields.io/github/license/dankkomcg/cookie-manager)
 
-Librería de PHP para gestionar cookies de manera simple y eficiente. Facilita la creación, eliminación y gestión de cookies.
+A simple and efficient PHP library for managing cookies. It simplifies the creation, deletion, and management of cookies.
 
-## Instalación
+## Installation
 
-Instala la librería utilizando Composer:
+Install the library using Composer:
 
 ```bash
 composer require dankkomcg/cookie-manager
 ```
 
-## Uso
+## Usage
 
-### Crear una cookie
+### Create a Cookie
 
-Para crear una cookie, utiliza el método `create` de la clase `CookieManager`. Puedes definir el nombre, valor, tiempo de expiración y otras propiedades de la cookie.
+To create a cookie, use the `create` method from the `CookieManager` class. You can define the name, value, expiration time, and other properties of the cookie.
 
 ```php
 use Dankkomcg\Cookie\CookieManager;
 
-// Crear una cookie que expira en 1 hora
+// Create a cookie that expires in 1 hour
 CookieManager::create('user_session', 'abc123', time() + 3600, '/', 'example.com', true, true);
 ```
 
-### Eliminar una cookie
+### Delete a Cookie
 
-Para eliminar una cookie, simplemente usa el método `delete`. Esto marcará la cookie como expirada y la eliminará del navegador.
+To delete a cookie, simply use the `delete` method. This will mark the cookie as expired and remove it from the browser.
 
 ```php
 use Dankkomcg\Cookie\CookieManager;
 
-// Eliminar una cookie
+// Delete a cookie
 CookieManager::delete('user_session', '/', 'example.com');
 ```
 
-### Listar todas las cookies
+### List All Cookies
 
-Puedes obtener todas las cookies creadas y gestionarlas:
+You can retrieve all created cookies and manage them:
 
 ```php
 use Dankkomcg\Cookie\CookieManager;
 
-// Obtener todas las cookies
+// Get all cookies
 $cookies = CookieManager::getCookies();
 print_r($cookies);
 ```
 
-### Zona horaria
+### Timezone Consideration
 
-Como recomendación, si tu servidor y los usuarios están en diferentes zonas horarias, asegúrate de que el servidor esté configurado con la zona horaria correcta para evitar problemas con la expiración de las cookies. Puedes hacerlo usando `date_default_timezone_set()` en donde consideres:
+If your server and users are in different time zones, ensure your server is set to the correct time zone to avoid issues with cookie expiration. You can do this using:
 
 ```php
-// Configurar la zona horaria del servidor
+// Set server timezone
 date_default_timezone_set('Europe/Madrid');
 ```
 
-### Tests
+### Testing
 
-Se incluyen pruebas unitarias con `PHPUnit`. Para ejecutarlas:
+Unit tests are included with `PHPUnit`. To run them:
 
 ```bash
 vendor/bin/phpunit
 ```
 
-Las pruebas están diseñadas para simular las operaciones de creación y eliminación de cookies, asegurando que el comportamiento sea el esperado:
+The tests simulate cookie creation and deletion operations to ensure expected behavior:
 
-```text
+```
 Cannot modify header information - headers already sent...
 ```
 
-Hemos creado un `mock` mediante la clase `CookieHelper`, que encapsula el seteo nativo de la cookie, como ya hemos mencionado más arriba.
+We have created a `mock` using the `CookieHelper` class, which encapsulates the native cookie setting as mentioned above.
 
-## Contribución
+## Contributing
 
-Si deseas contribuir a este proyecto, puedes hacer un fork del repositorio, crear una nueva rama para tus cambios y enviar un pull request. ¡Todas las contribuciones son bienvenidas!
+If you wish to contribute to this project, you can fork the repository, create a new branch for your changes, and submit a pull request. All contributions are welcome!
 
-1. Haz un fork del proyecto
-2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`)
-3. Realiza tus cambios
-4. Haz commit de tus cambios (`git commit -m 'Agregar nueva funcionalidad'`)
-5. Envía un push a la rama (`git push origin feature/nueva-funcionalidad`)
-6. Abre un pull request
+- Fork the project
+- Create a new branch (`git checkout -b feature/new-feature`)
+- Make your changes
+- Commit your changes (`git commit -m 'Add new feature'`)
+- Push to the branch (`git push origin feature/new-feature`)
+- Open a pull request
 
-## Licencia
+## License
 
-Este proyecto está licenciado bajo la **MIT License**. Consulta el archivo `LICENSE` para más detalles.
+This project is licensed under the **MIT License**. See the `LICENSE` file for more details.
+```
+
+**Notas sobre los badges:**
+
+- **Packagist Version**: Muestra la versión actual de la librería en Packagist.
+- **Build Status**: Indica el estado de la última compilación (requiere integración con Travis CI o similar).
+- **Coverage Status**: Muestra el porcentaje de cobertura de pruebas (requiere integración con Coveralls o similar).
+- **License**: Indica el tipo de licencia del proyecto.
